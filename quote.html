@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Free Quote | All Remodeling and Painting RG LLC</title>
+<meta name="description" content="Request a free estimate. Licensed & Insured. West Coast Florida. Call 813-693-7429.">
+<link rel="icon" href="assets/images/favicon.png" type="image/png">
+<link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+<link rel="shortcut icon" href="assets/images/favicon.png">
+<link rel="apple-touch-icon" href="assets/images/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#1B2A3B;--navy2:#243550;--gold:#C59B2F;--gold2:#E0B84A;--gold-pale:#FDF6E3;--off:#F8F7F4;--cream:#F3F0E8;--border:#E2DDD4;--text:#1A1A1A;--mid:#4A4540;--muted:#7A7060;}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}html{scroll-behavior:smooth;}
+body{background:var(--off);color:var(--text);font-family:'Inter',sans-serif;overflow-x:hidden;}
+a{text-decoration:none;}
+.topbar{background:var(--navy);padding:8px 20px;text-align:center;font-size:12px;color:rgba(255,255,255,0.65);}
+.topbar a{color:#E8C96A;font-weight:600;}.topbar .sep{margin:0 14px;opacity:.35;}
+.navbar{position:sticky;top:0;z-index:9999;background:#fff;border-bottom:1px solid var(--border);box-shadow:0 2px 16px rgba(0,0,0,0.07);}
+.navbar-inner{max-width:1200px;margin:0 auto;padding:0 32px;display:flex;align-items:center;justify-content:space-between;height:70px;}
+.nav-logo{font-family:'Playfair Display',serif;font-size:18px;font-weight:600;color:var(--navy);line-height:1.15;}
+.nav-logo small{display:block;font-family:'Inter',sans-serif;font-size:9px;font-weight:500;letter-spacing:3px;color:var(--muted);text-transform:uppercase;margin-top:2px;}
+.nav-links{display:flex;align-items:center;gap:28px;}
+.nav-links a{font-size:12.5px;font-weight:500;color:var(--mid);letter-spacing:.3px;padding-bottom:2px;border-bottom:1.5px solid transparent;transition:color .2s,border-color .2s;}
+.nav-links a:hover,.nav-links a.active{color:var(--navy);border-color:var(--gold);}
+.nav-cta{background:var(--navy)!important;color:#fff!important;padding:10px 20px!important;border-radius:5px;border-bottom:none!important;font-weight:600!important;font-size:12px!important;}
+.nav-cta:hover{background:var(--gold)!important;color:var(--navy)!important;}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:6px;background:none;border:none;}
+.hamburger span{display:block;width:22px;height:2px;background:var(--navy);border-radius:2px;}
+.mobile-menu{display:none;position:fixed;top:70px;left:0;right:0;background:#fff;border-bottom:2px solid var(--border);z-index:9998;padding:20px 24px;flex-direction:column;gap:16px;box-shadow:0 8px 32px rgba(0,0,0,0.1);}
+.mobile-menu.open{display:flex;}.mobile-menu a{font-size:14px;font-weight:500;color:var(--mid);padding:8px 0;border-bottom:1px solid var(--border);}
+.mobile-menu a:last-child{border-bottom:none;color:var(--navy);font-weight:700;}
+.qp{padding:72px 40px;background:var(--off);}
+.qp-inner{max-width:1080px;margin:0 auto;display:grid;grid-template-columns:1fr 1.1fr;gap:60px;align-items:start;}
+.sec-label{font-size:10px;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:var(--gold);display:flex;align-items:center;gap:10px;margin-bottom:12px;}
+.sec-label::before{content:'';display:block;width:22px;height:2px;background:var(--gold);border-radius:2px;}
+.sec-title{font-family:'Playfair Display',serif;font-size:clamp(28px,3.5vw,44px);font-weight:600;color:var(--navy);line-height:1.06;margin-bottom:12px;}
+.sec-title em{font-style:italic;color:var(--gold);}
+.gold-bar{width:38px;height:3px;background:var(--gold);border-radius:2px;margin:14px 0;}
+.qp-body{font-size:14px;color:var(--mid);line-height:1.9;margin-bottom:16px;}
+.qp-phone-lbl{font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--muted);margin-bottom:6px;}
+.qp-phone{font-family:'Playfair Display',serif;font-size:clamp(26px,3.2vw,36px);font-weight:600;color:var(--navy);display:flex;align-items:center;gap:9px;transition:color .2s;}
+.qp-phone:hover{color:var(--gold);}
+.qp-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px;}
+.btn-navy{display:inline-flex;align-items:center;gap:8px;background:var(--navy);color:#fff;padding:12px 20px;font-size:12px;font-weight:700;letter-spacing:.4px;text-transform:uppercase;border-radius:5px;transition:all .2s;}
+.btn-navy:hover{background:var(--navy2);}
+.btn-outline{display:inline-flex;align-items:center;gap:8px;border:1.5px solid var(--navy);color:var(--navy);padding:11px 18px;font-size:12px;font-weight:600;letter-spacing:.4px;text-transform:uppercase;border-radius:5px;transition:all .2s;}
+.btn-outline:hover{background:var(--navy);color:#fff;}
+.trust-list{display:flex;flex-direction:column;gap:9px;margin-top:22px;}
+.trust-row{display:flex;align-items:center;gap:10px;font-size:13px;color:var(--mid);font-weight:500;}
+.trust-icon{width:32px;height:32px;background:var(--gold-pale);border:1px solid rgba(197,155,47,0.22);border-radius:4px;display:flex;align-items:center;justify-content:center;font-size:15px;flex-shrink:0;}
+.cf{background:#fff;border:1px solid var(--border);border-radius:7px;padding:36px 30px;box-shadow:0 6px 28px rgba(0,0,0,0.07);}
+.cf-title{font-family:'Playfair Display',serif;font-size:22px;font-weight:600;color:var(--navy);margin-bottom:4px;}
+.cf-sub{font-size:12px;color:var(--muted);margin-bottom:22px;line-height:1.6;}
+.cf-group{margin-bottom:14px;}
+.cf-label{display:block;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--mid);margin-bottom:5px;}
+.cf-input,.cf-select{width:100%;padding:12px 14px;border:1.5px solid var(--border);border-radius:5px;font-family:'Inter',sans-serif;font-size:13px;color:var(--text);background:#fff;transition:border-color .2s;outline:none;appearance:none;-webkit-appearance:none;}
+.cf-input:focus,.cf-select:focus{border-color:var(--gold);}
+.cf-select{cursor:pointer;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='7' fill='none'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%237A7060' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 13px center;padding-right:36px;}
+.cf-btn{width:100%;background:var(--navy);color:#fff;padding:15px;font-size:13px;font-weight:700;letter-spacing:.4px;text-transform:uppercase;border:none;border-radius:5px;cursor:pointer;font-family:'Inter',sans-serif;transition:background .2s;display:flex;align-items:center;justify-content:center;gap:8px;}
+.cf-btn:hover{background:var(--gold);color:var(--navy);}
+.cf-note{font-size:11px;color:var(--muted);text-align:center;margin-top:10px;line-height:1.7;}
+footer{background:var(--navy);padding:52px 40px 24px;}
+.footer-grid{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:44px;padding-bottom:32px;border-bottom:1px solid rgba(255,255,255,0.1);margin-bottom:20px;}
+.footer-brand{font-family:'Playfair Display',serif;font-size:17px;font-weight:600;color:#fff;margin-bottom:10px;}
+.footer-brand-sub{font-size:12px;color:rgba(255,255,255,0.5);line-height:1.85;margin-bottom:14px;}
+.footer-badge{display:inline-flex;align-items:center;gap:7px;background:rgba(197,155,47,0.12);border:1px solid rgba(224,184,74,0.3);padding:6px 12px;font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#E8C96A;border-radius:4px;}
+.footer-col-title{font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#E8C96A;margin-bottom:14px;}
+.footer-col a{display:block;color:rgba(255,255,255,0.5);font-size:12px;margin-bottom:8px;transition:color .2s;}
+.footer-col a:hover{color:#E8C96A;}
+.footer-bottom{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:11px;color:rgba(255,255,255,0.38);}
+.footer-bottom a{color:#E8C96A;}
+.sticky{position:fixed;bottom:22px;right:22px;z-index:9999;display:flex;flex-direction:column;gap:8px;align-items:flex-end;}
+.sticky-btn{display:flex;align-items:center;gap:8px;padding:12px 18px;border-radius:30px;font-size:12.5px;font-weight:700;box-shadow:0 6px 24px rgba(0,0,0,0.2);transition:transform .2s;}
+.sticky-btn:hover{transform:translateY(-2px);}
+.sticky-call{background:#1A7F4B;color:#fff;}.sticky-email{background:var(--navy);color:#fff;}
+@media(max-width:880px){.nav-links{display:none;}.hamburger{display:flex;}.qp{padding:48px 20px;}.qp-inner{grid-template-columns:1fr;gap:36px;}.cf{padding:24px 16px;}footer{padding:44px 20px 20px;}.footer-grid{grid-template-columns:1fr;gap:22px;}.sticky{bottom:14px;right:12px;}}
+</style>
+</head>
+<body>
+<div class="topbar"><span>📞 <a href="tel:8136937429">813-693-7429</a></span><span class="sep">|</span><span>✉ <a href="mailto:allremodeling.business@gmail.com">allremodeling.business@gmail.com</a></span><span class="sep">|</span><span>🛡️ Licensed &amp; Insured — West Coast Florida</span></div>
+<nav class="navbar">
+  <div class="navbar-inner">
+    <a href="index.html" class="nav-logo">All Remodeling<small>&amp; Painting RG LLC</small></a>
+    <div class="nav-links">
+      <a href="index.html">Home</a><a href="services.html">Services</a><a href="about.html">About</a><a href="contact.html">Contact</a><a href="quote.html" class="active nav-cta">Free Quote</a>
+    </div>
+    <button class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a><a href="services.html">Services</a><a href="about.html">About</a><a href="contact.html">Contact</a><a href="quote.html">Free Quote — 813-693-7429</a>
+</div>
+
+<div class="qp">
+  <div class="qp-inner">
+    <div>
+      <div class="sec-label">No Obligation</div>
+      <h1 class="sec-title">Get a <em>Free Estimate</em></h1>
+      <div class="gold-bar"></div>
+      <p class="qp-body">Fill out the form and Fernando will contact you personally and fast. We serve all of the West Coast of Florida and offer free, honest estimates with no pressure.</p>
+      <div class="qp-phone-lbl">Call Fernando Directly</div>
+      <a href="tel:8136937429" class="qp-phone">📞 813-693-7429</a>
+      <p style="font-size:12px;color:var(--muted);margin-top:7px;">Mon–Sat · Fast response guaranteed · West Coast Florida</p>
+      <div class="qp-actions">
+        <a href="tel:8136937429" class="btn-navy">📞 Call Now</a>
+        <a href="mailto:allremodeling.business@gmail.com" class="btn-outline">✉ Email Us</a>
+      </div>
+      <div class="trust-list">
+        <div class="trust-row"><div class="trust-icon">🛡️</div> Fully Licensed &amp; Insured</div>
+        <div class="trust-row"><div class="trust-icon">⭐</div> 10+ Years of Experience</div>
+        <div class="trust-row"><div class="trust-icon">🔨</div> Quality Finishes Guaranteed</div>
+        <div class="trust-row"><div class="trust-icon">📍</div> West Coast Florida Specialist</div>
+        <div class="trust-row"><div class="trust-icon">✅</div> Free, No-Obligation Estimates</div>
+      </div>
+    </div>
+    <div>
+      <div class="cf">
+        <div class="cf-title">Request Your Free Estimate</div>
+        <div class="cf-sub">We respond within a few hours — usually faster.</div>
+        <div class="cf-group"><label class="cf-label">Full Name *</label><input type="text" class="cf-input" id="cf-name" placeholder="Your full name"></div>
+        <div class="cf-group"><label class="cf-label">Phone Number *</label><input type="tel" class="cf-input" id="cf-phone" placeholder="(813) 000-0000"></div>
+        <div class="cf-group"><label class="cf-label">Property Address</label><input type="text" class="cf-input" id="cf-address" placeholder="Your property address"></div>
+        <div class="cf-group">
+          <label class="cf-label">Type of Project *</label>
+          <select class="cf-select" id="cf-service">
+            <option value="" disabled selected>Select a service...</option>
+            <option>Bathroom Remodeling</option><option>Kitchen Remodeling</option>
+            <option>Tile Flooring</option><option>Interior Painting</option>
+            <option>Exterior Painting</option><option>Backsplash</option>
+            <option>Drywall</option><option>Texture</option>
+            <option>Doors &amp; Windows</option><option>Carpentry</option>
+            <option>Fireplace / Accent Wall</option><option>Other</option>
+          </select>
+        </div>
+        <button class="cf-btn" onclick="submitForm()">📋 Send My Request — It's Free</button>
+        <div class="cf-note">🔒 Your info is private. No spam, ever.<br>Licensed &amp; Insured · West Coast Florida</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-grid">
+    <div><div class="footer-brand">All Remodeling &amp; Painting RG LLC</div><p class="footer-brand-sub">West Coast Florida's trusted remodeling company. Licensed, insured, committed to quality.<br><strong style="color:rgba(255,255,255,0.75)">Fernando Torres — Owner</strong></p><div class="footer-badge">🛡️ Licensed &amp; Insured</div></div>
+    <div class="footer-col"><div class="footer-col-title">Services</div><a href="services.html#bathroom">Bathroom Remodeling</a><a href="services.html#flooring">Floor Tile</a><a href="services.html#kitchen">Kitchen Remodeling</a><a href="services.html#painting">Interior Painting</a><a href="services.html#exterior">Exterior Painting</a><a href="services.html#drywall">Drywall &amp; Texture</a></div>
+    <div class="footer-col"><div class="footer-col-title">Company</div><a href="index.html">Home</a><a href="about.html">About Us</a><a href="services.html">Services</a><a href="contact.html">Contact</a></div>
+    <div class="footer-col"><div class="footer-col-title">Areas</div><a href="#">Tampa</a><a href="#">Saint Petersburg</a><a href="#">Clearwater</a><a href="#">Wesley Chapel</a><a href="#">Riverview</a><a href="#">New Port Richey</a></div>
+  </div>
+  <div class="footer-bottom"><span>© 2025 All Remodeling and Painting RG LLC. All rights reserved.</span><span>📞 <a href="tel:8136937429">813-693-7429</a></span></div>
+</footer>
+<div class="sticky"><a href="tel:8136937429" class="sticky-btn sticky-call">📞 Call Now</a><a href="mailto:allremodeling.business@gmail.com" class="sticky-btn sticky-email">✉ Email</a></div>
+<script>
+function toggleMenu(){document.getElementById('mobileMenu').classList.toggle('open');}
+function submitForm(){
+  var n=document.getElementById('cf-name').value.trim();
+  var p=document.getElementById('cf-phone').value.trim();
+  var s=document.getElementById('cf-service').value;
+  if(!n||!p||!s){alert('Please fill in your name, phone, and type of project.');return;}
+  var b=document.querySelector('.cf-btn');
+  b.textContent='✅ Request Sent! We\'ll contact you soon.';b.style.background='#1A7F4B';b.disabled=true;
+}
+</script>
+</body>
+</html>

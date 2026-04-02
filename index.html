@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AllRemodelings | West Coast Florida's Trusted Remodeling Company</title>
+<meta name="description" content="All Remodeling and Painting RG LLC — West Coast Florida's trusted remodeling company. Licensed & Insured. Bathroom, Kitchen, Tile, Painting and more. Call Fernando: 813-693-7429.">
+<!-- FAVICON: Put your logo as favicon.png in assets/images/ to replace the SVG default -->
+<link rel="icon" href="assets/images/favicon.png" type="image/png">
+<link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+<link rel="shortcut icon" href="assets/images/favicon.png">
+<link rel="apple-touch-icon" href="assets/images/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap&display=swap" rel="stylesheet">
+<style>
+  /* Prevent invisible text while fonts load */
+  body { font-display: swap; }
+  .hero-title, .sec-title, .why-title, .form-left-title, .nav-logo,
+  .footer-brand, .stat-num, .ws-num, .ph-num, .iib-num, .cf-title {
+    font-display: swap;
+  }
+</style>
+<style>
+/* ===== VARIABLES ===== */
+:root {
+  --navy: #1B2A3B;
+  --navy2: #243550;
+  --gold: #C59B2F;
+  --gold2: #E0B84A;
+  --gold-pale: #FDF6E3;
+  --white: #FFFFFF;
+  --off: #F8F7F4;
+  --cream: #F3F0E8;
+  --border: #E2DDD4;
+  --text: #1A1A1A;
+  --mid: #4A4540;
+  --muted: #7A7060;
+}
+/* ===== RESET ===== */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { background: var(--off); color: var(--text); font-family: 'Inter', sans-serif; overflow-x: hidden; }
+img { display: block; max-width: 100%; }
+a { text-decoration: none; }
+</style>
+</head>
+<body>
+
+<!-- ===================== TOPBAR ===================== -->
+<style>
+.topbar { background: var(--navy); padding: 8px 20px; text-align: center; font-size: 12px; color: rgba(255,255,255,0.65); }
+.topbar a { color: #E8C96A; font-weight: 600; transition: color .2s; }
+.topbar a:hover { color: #fff; }
+.topbar .sep { margin: 0 14px; opacity: .35; }
+</style>
+
+<div class="topbar">
+  <span>📞 <a href="tel:8136937429">813-693-7429</a></span>
+  <span class="sep">|</span>
+  <span>✉ <a href="mailto:allremodeling.business@gmail.com">allremodeling.business@gmail.com</a></span>
+  <span class="sep">|</span>
+  <span>🛡️ Licensed &amp; Insured — West Coast Florida</span>
+</div>
+
+<!-- ===================== NAVBAR ===================== -->
+<style>
+.navbar { position: sticky; top: 0; z-index: 9999; background: #fff; border-bottom: 1px solid var(--border); box-shadow: 0 2px 16px rgba(0,0,0,0.07); }
+.navbar-inner { max-width: 1200px; margin: 0 auto; padding: 0 32px; display: flex; align-items: center; justify-content: space-between; height: 70px; }
+.nav-logo { font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 600; color: var(--navy); line-height: 1.15; }
+.nav-logo small { display: block; font-family: 'Inter', sans-serif; font-size: 9px; font-weight: 500; letter-spacing: 3px; color: var(--muted); text-transform: uppercase; margin-top: 2px; }
+.nav-links { display: flex; align-items: center; gap: 28px; }
+.nav-links a { font-size: 12.5px; font-weight: 500; color: var(--mid); letter-spacing: .3px; padding-bottom: 2px; border-bottom: 1.5px solid transparent; transition: color .2s, border-color .2s; }
+.nav-links a:hover, .nav-links a.active { color: var(--navy); border-color: var(--gold); }
+.nav-cta { background: var(--navy) !important; color: #fff !important; padding: 10px 20px !important; border-radius: 5px; border-bottom: none !important; font-weight: 600 !important; font-size: 12px !important; transition: background .2s !important; }
+.nav-cta:hover { background: var(--gold) !important; color: var(--navy) !important; }
+.hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 6px; background: none; border: none; }
+.hamburger span { display: block; width: 22px; height: 2px; background: var(--navy); border-radius: 2px; transition: .3s; }
+.mobile-menu { display: none; position: fixed; top: 70px; left: 0; right: 0; background: #fff; border-bottom: 2px solid var(--border); z-index: 9998; padding: 20px 24px; flex-direction: column; gap: 16px; box-shadow: 0 8px 32px rgba(0,0,0,0.1); }
+.mobile-menu.open { display: flex; }
+.mobile-menu a { font-size: 14px; font-weight: 500; color: var(--mid); padding: 8px 0; border-bottom: 1px solid var(--border); }
+.mobile-menu a:last-child { border-bottom: none; color: var(--navy); font-weight: 700; }
+@media(max-width: 880px) { .nav-links { display: none; } .hamburger { display: flex; } }
+</style>
+
+<nav class="navbar">
+  <div class="navbar-inner">
+    <a href="index.html" class="nav-logo">All Remodeling<small>&amp; Painting RG LLC</small></a>
+    <div class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="quote.html" class="nav-cta">Free Quote</a>
+    </div>
+    <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="services.html">Services</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+  <a href="quote.html">Free Quote — Call 813-693-7429</a>
+</div>
+
+<!-- ===================== SERVICES SCROLLING BAND ===================== -->
+<style>
+.svc-band { background: var(--cream); border-top: 1px solid var(--border); border-bottom: 2px solid var(--border); overflow: hidden; white-space: nowrap; }
+.svc-band-track { display: inline-flex; animation: bandScroll 38s linear infinite; }
+.svc-band:hover .svc-band-track { animation-play-state: paused; }
+@keyframes bandScroll { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+.svc-band-item { display: inline-flex; align-items: center; gap: 8px; padding: 12px 28px; font-size: 10.5px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--mid); border-right: 1px solid var(--border); transition: color .2s, background .2s; }
+.svc-band-item:hover { color: var(--gold); background: rgba(197,155,47,0.06); }
+.svc-band-dot { color: var(--gold); font-size: 6px; }
+</style>
+
+<div class="svc-band">
+  <div class="svc-band-track">
+    <a href="services.html#bathroom" class="svc-band-item"><span class="svc-band-dot">◆</span> Bathroom Remodeling</a>
+    <a href="services.html#flooring" class="svc-band-item"><span class="svc-band-dot">◆</span> Floor Tile &amp; Flooring</a>
+    <a href="services.html#kitchen" class="svc-band-item"><span class="svc-band-dot">◆</span> Kitchen Remodeling</a>
+    <a href="services.html#painting" class="svc-band-item"><span class="svc-band-dot">◆</span> Interior Painting</a>
+    <a href="services.html#exterior" class="svc-band-item"><span class="svc-band-dot">◆</span> Exterior Painting</a>
+    <a href="services.html#backsplash" class="svc-band-item"><span class="svc-band-dot">◆</span> Backsplash</a>
+    <a href="services.html#carpentry" class="svc-band-item"><span class="svc-band-dot">◆</span> Interior Carpentry</a>
+    <a href="services.html#doors" class="svc-band-item"><span class="svc-band-dot">◆</span> Doors &amp; Windows</a>
+    <a href="services.html#drywall" class="svc-band-item"><span class="svc-band-dot">◆</span> Drywall &amp; Texture</a>
+    <a href="services.html#fireplace" class="svc-band-item"><span class="svc-band-dot">◆</span> Fireplace &amp; Accent Walls</a>
+    <!-- duplicate for seamless loop -->
+    <a href="services.html#bathroom" class="svc-band-item"><span class="svc-band-dot">◆</span> Bathroom Remodeling</a>
+    <a href="services.html#flooring" class="svc-band-item"><span class="svc-band-dot">◆</span> Floor Tile &amp; Flooring</a>
+    <a href="services.html#kitchen" class="svc-band-item"><span class="svc-band-dot">◆</span> Kitchen Remodeling</a>
+    <a href="services.html#painting" class="svc-band-item"><span class="svc-band-dot">◆</span> Interior Painting</a>
+    <a href="services.html#exterior" class="svc-band-item"><span class="svc-band-dot">◆</span> Exterior Painting</a>
+    <a href="services.html#backsplash" class="svc-band-item"><span class="svc-band-dot">◆</span> Backsplash</a>
+    <a href="services.html#carpentry" class="svc-band-item"><span class="svc-band-dot">◆</span> Interior Carpentry</a>
+    <a href="services.html#doors" class="svc-band-item"><span class="svc-band-dot">◆</span> Doors &amp; Windows</a>
+    <a href="services.html#drywall" class="svc-band-item"><span class="svc-band-dot">◆</span> Drywall &amp; Texture</a>
+    <a href="services.html#fireplace" class="svc-band-item"><span class="svc-band-dot">◆</span> Fireplace &amp; Accent Walls</a>
+  </div>
+</div>
+
+<!-- ===================== HERO ===================== -->
+<style>
+.hero { position: relative; min-height: 88vh; display: flex; align-items: center; overflow: hidden; background: var(--navy); }
+.hero-slide { position: absolute; inset: 0; background-size: cover; background-position: center; opacity: 0; transition: opacity 1.4s ease; }
+.hero-slide.active { opacity: 1; }
+.hero-slide::after { content: ''; position: absolute; inset: 0; background: linear-gradient(110deg, rgba(27,42,59,0.90) 0%, rgba(27,42,59,0.55) 60%, rgba(27,42,59,0.30) 100%); }
+.hero-content { position: relative; z-index: 10; max-width: 1200px; margin: 0 auto; padding: 0 40px; width: 100%; }
+.hero-badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(197,155,47,0.18); border: 1px solid rgba(224,184,74,0.5); padding: 7px 16px; border-radius: 30px; font-size: 10px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #E8C96A; margin-bottom: 24px; }
+.hero-title { font-family: 'Playfair Display', serif; font-size: clamp(40px, 5.5vw, 80px); font-weight: 600; color: #fff; line-height: 1.02; margin-bottom: 10px; }
+.hero-title em { display: block; font-style: italic; color: #E8C96A; }
+.hero-tagline { font-size: clamp(15px, 2vw, 20px); font-weight: 300; color: rgba(255,255,255,0.72); margin-bottom: 20px; letter-spacing: .3px; }
+.hero-sub { font-size: 14px; color: rgba(255,255,255,0.65); line-height: 1.85; max-width: 480px; margin-bottom: 36px; }
+.hero-btns { display: flex; gap: 12px; flex-wrap: wrap; }
+.btn-gold { display: inline-flex; align-items: center; gap: 8px; background: var(--gold2); color: var(--navy); padding: 14px 28px; font-size: 12px; font-weight: 700; letter-spacing: .5px; text-transform: uppercase; border-radius: 5px; transition: all .2s; border: none; cursor: pointer; font-family: 'Inter', sans-serif; }
+.btn-gold:hover { background: #f0cc60; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(197,155,47,0.4); }
+.btn-white-outline { display: inline-flex; align-items: center; gap: 8px; border: 1.5px solid rgba(255,255,255,0.4); color: #fff; padding: 13px 26px; font-size: 12px; font-weight: 600; letter-spacing: .5px; text-transform: uppercase; border-radius: 5px; transition: all .2s; font-family: 'Inter', sans-serif; }
+.btn-white-outline:hover { border-color: rgba(255,255,255,0.8); background: rgba(255,255,255,0.1); }
+.hero-dots { position: absolute; bottom: 28px; left: 50%; transform: translateX(-50%); z-index: 10; display: flex; gap: 8px; }
+.hero-dot { width: 8px; height: 8px; border-radius: 50%; background: rgba(255,255,255,0.35); border: none; cursor: pointer; transition: all .3s; padding: 0; }
+.hero-dot.active { background: #E8C96A; width: 22px; border-radius: 4px; }
+@media(max-width:700px){ .hero { min-height: 70vh; } .hero-content { padding: 0 20px; } }
+</style>
+
+<section class="hero">
+  <div class="hero-slide active" style="background-image:url('https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=1600&q=80')"></div>
+  <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1600&q=80')"></div>
+  <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1484154218962-a197022b5858?w=1600&q=80')"></div>
+  <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1571781926291-c477ebfd024b?w=1600&q=80')"></div>
+  <div class="hero-content">
+    <div class="hero-badge">🛡️ Licensed &amp; Insured · 10+ Years Experience</div>
+    <h1 class="hero-title">West Coast Florida's<em>Most Trusted</em></h1>
+    <p class="hero-tagline">Remodeling &amp; Painting Company</p>
+    <p class="hero-sub">From Tampa to Clearwater — All Remodeling and Painting RG LLC delivers premium craftsmanship, honest pricing, and results that last. Call Fernando directly for a free estimate.</p>
+    <div class="hero-btns">
+      <a href="tel:8136937429" class="btn-gold">📞 Call 813-693-7429</a>
+      <a href="#lead-form" class="btn-white-outline">Request Free Estimate →</a>
+    </div>
+  </div>
+  <div class="hero-dots">
+    <button class="hero-dot active" onclick="goSlide(0)"></button>
+    <button class="hero-dot" onclick="goSlide(1)"></button>
+    <button class="hero-dot" onclick="goSlide(2)"></button>
+    <button class="hero-dot" onclick="goSlide(3)"></button>
+  </div>
+</section>
+
+<!-- ===================== TRUST BAR ===================== -->
+<style>
+.trust-bar { background: var(--navy2); padding: 14px 20px; }
+.trust-bar-inner { max-width: 1200px; margin: 0 auto; display: flex; justify-content: center; align-items: center; gap: 32px; flex-wrap: wrap; }
+.trust-item { display: flex; align-items: center; gap: 8px; font-size: 11px; font-weight: 600; color: rgba(255,255,255,0.75); letter-spacing: .3px; }
+.trust-item span { font-size: 14px; }
+.trust-sep { width: 1px; height: 18px; background: rgba(255,255,255,0.15); }
+@media(max-width:700px){ .trust-sep { display: none; } .trust-bar-inner { gap: 14px; } }
+</style>
+
+<div class="trust-bar">
+  <div class="trust-bar-inner">
+    <div class="trust-item"><span>🛡️</span> Licensed &amp; Insured</div>
+    <div class="trust-sep"></div>
+    <div class="trust-item"><span>⭐</span> 10+ Years Experience</div>
+    <div class="trust-sep"></div>
+    <div class="trust-item"><span>✅</span> 5-Star Rated</div>
+    <div class="trust-sep"></div>
+    <div class="trust-item"><span>🏠</span> West Coast Florida</div>
+    <div class="trust-sep"></div>
+    <div class="trust-item"><span>💬</span> Free Estimates</div>
+    <div class="trust-sep"></div>
+    <div class="trust-item"><span>🔨</span> 500+ Projects Done</div>
+  </div>
+</div>
+
+<!-- ===================== INTRO / ABOUT ===================== -->
+<style>
+.intro-sec { padding: 88px 40px; background: #fff; }
+.intro-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: center; }
+.sec-label { font-size: 10px; font-weight: 700; letter-spacing: 4px; text-transform: uppercase; color: var(--gold); display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+.sec-label::before { content: ''; display: block; width: 24px; height: 2px; background: var(--gold); border-radius: 2px; }
+.sec-title { font-family: 'Playfair Display', serif; font-size: clamp(30px, 3.5vw, 48px); font-weight: 600; color: var(--navy); line-height: 1.06; margin-bottom: 12px; }
+.sec-title em { font-style: italic; color: var(--gold); }
+.gold-bar { width: 40px; height: 3px; background: var(--gold); border-radius: 2px; margin: 16px 0; }
+.intro-body { font-size: 14px; color: var(--mid); line-height: 1.9; margin-bottom: 14px; }
+.intro-quote { background: var(--cream); border-left: 3px solid var(--gold); padding: 16px 20px; border-radius: 0 4px 4px 0; margin: 18px 0; font-size: 13.5px; color: var(--mid); line-height: 1.8; font-style: italic; }
+.intro-quote strong { font-style: normal; color: var(--navy); }
+.badges { display: flex; flex-wrap: wrap; gap: 8px; margin: 18px 0 24px; }
+.badge { display: flex; align-items: center; gap: 6px; background: var(--cream); border: 1px solid var(--border); padding: 7px 13px; border-radius: 4px; font-size: 11px; font-weight: 600; color: var(--mid); }
+.badge span { font-size: 13px; }
+.stats-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3px; margin-top: 24px; }
+.stat-box { background: var(--cream); border: 1px solid var(--border); padding: 20px 16px; }
+.stat-num { font-family: 'Playfair Display', serif; font-size: 38px; font-weight: 600; color: var(--navy); line-height: 1; }
+.stat-lbl { font-size: 9.5px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--muted); margin-top: 4px; }
+.intro-img-wrap { position: relative; }
+.intro-img { width: 100%; aspect-ratio: 4/5; object-fit: cover; border-radius: 6px; box-shadow: 0 12px 48px rgba(0,0,0,0.13); }
+.intro-img-badge { position: absolute; bottom: -16px; right: -16px; background: var(--navy); color: #fff; padding: 18px 20px; border-radius: 5px; text-align: center; box-shadow: 0 8px 28px rgba(27,42,59,0.3); }
+.iib-num { font-family: 'Playfair Display', serif; font-size: 28px; font-weight: 600; color: #E8C96A; line-height: 1; }
+.iib-lbl { font-size: 9px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: rgba(255,255,255,0.65); margin-top: 4px; }
+.btn-row { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 24px; }
+.btn-navy { display: inline-flex; align-items: center; gap: 8px; background: var(--navy); color: #fff; padding: 13px 22px; font-size: 12px; font-weight: 700; letter-spacing: .4px; text-transform: uppercase; border-radius: 5px; transition: all .2s; border: none; cursor: pointer; font-family: 'Inter', sans-serif; }
+.btn-navy:hover { background: var(--navy2); transform: translateY(-1px); }
+.btn-outline { display: inline-flex; align-items: center; gap: 8px; border: 1.5px solid var(--navy); color: var(--navy); padding: 12px 20px; font-size: 12px; font-weight: 600; letter-spacing: .4px; text-transform: uppercase; border-radius: 5px; transition: all .2s; font-family: 'Inter', sans-serif; }
+.btn-outline:hover { background: var(--navy); color: #fff; }
+@media(max-width:880px){ .intro-inner { grid-template-columns: 1fr; gap: 36px; } .intro-img-wrap { display: none; } .intro-sec { padding: 60px 20px; } }
+</style>
+
+<section class="intro-sec">
+  <div class="intro-inner">
+    <div>
+      <div class="sec-label">Who We Are</div>
+      <h2 class="sec-title">Tampa Bay's <em>Reliable</em><br>Remodeling Team</h2>
+      <div class="gold-bar"></div>
+      <p class="intro-body">All Remodeling and Painting RG LLC is the company homeowners across the West Coast of Florida trust for professional results, fair pricing, and a team that treats your home with respect.</p>
+      <p class="intro-body">Owner Fernando Torres personally oversees every project — from the first call to the final walkthrough. No surprises, no shortcuts.</p>
+      <div class="intro-quote">"We built this company on one promise: every home we touch will be treated like our own. Insurance, experience, and quality finishes — every single time."<br><strong>— Fernando Torres, Owner</strong></div>
+      <div class="badges">
+        <div class="badge"><span>🛡️</span> Licensed &amp; Insured</div>
+        <div class="badge"><span>⭐</span> 10+ Years Experience</div>
+        <div class="badge"><span>🏆</span> Quality Finishes</div>
+      </div>
+      <div class="stats-grid">
+        <div class="stat-box"><div class="stat-num">10+</div><div class="stat-lbl">Years Experience</div></div>
+        <div class="stat-box"><div class="stat-num">500+</div><div class="stat-lbl">Projects Done</div></div>
+        <div class="stat-box"><div class="stat-num">5★</div><div class="stat-lbl">Average Rating</div></div>
+        <div class="stat-box"><div class="stat-num">100%</div><div class="stat-lbl">Fully Insured</div></div>
+      </div>
+      <div class="btn-row">
+        <a href="tel:8136937429" class="btn-navy">📞 Call for Free Estimate</a>
+        <a href="about.html" class="btn-outline">About Our Company →</a>
+      </div>
+    </div>
+    <div class="intro-img-wrap">
+      <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800&q=80" alt="Professional remodeling contractor" class="intro-img">
+      <div class="intro-img-badge"><div class="iib-num">100%</div><div class="iib-lbl">Insured</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SERVICES ===================== -->
+<style>
+.services-sec { padding: 88px 40px; background: var(--off); }
+.services-inner { max-width: 1200px; margin: 0 auto; }
+.sec-header { margin-bottom: 48px; }
+.sec-sub { font-size: 14px; color: var(--muted); line-height: 1.8; max-width: 560px; margin-top: 8px; }
+.svc-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3px; }
+.svc-card { background: #fff; border: 1px solid var(--border); padding: 0; overflow: hidden; transition: box-shadow .3s, transform .3s; position: relative; }
+.svc-card:hover { transform: translateY(-4px); box-shadow: 0 14px 40px rgba(0,0,0,0.1); }
+.svc-card-img { width: 100%; height: 160px; object-fit: cover; display: block; }
+.svc-card-body { padding: 22px 20px 20px; }
+.svc-card-num { font-family: 'Playfair Display', serif; font-size: 28px; font-weight: 400; color: rgba(197,155,47,0.2); line-height: 1; margin-bottom: 6px; }
+.svc-card-name { font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 600; color: var(--navy); margin-bottom: 7px; }
+.svc-card-desc { font-size: 12.5px; color: var(--muted); line-height: 1.75; }
+.svc-card-tags { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 10px; }
+.svc-tag { background: var(--cream); border: 1px solid var(--border); padding: 3px 8px; font-size: 10px; font-weight: 600; color: var(--muted); border-radius: 3px; }
+.svc-card-link { display: inline-flex; align-items: center; gap: 5px; margin-top: 12px; font-size: 11px; font-weight: 700; letter-spacing: .5px; text-transform: uppercase; color: var(--gold); opacity: 0; transition: opacity .25s; }
+.svc-card:hover .svc-card-link { opacity: 1; }
+.svc-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--gold), var(--gold2)); transform: scaleX(0); transition: transform .3s; transform-origin: left; }
+.svc-card:hover::before { transform: scaleX(1); }
+.svc-cta { text-align: center; margin-top: 40px; }
+@media(max-width:880px){ .svc-grid { grid-template-columns: 1fr; } .services-sec { padding: 60px 20px; } }
+@media(min-width:881px) and (max-width:1100px){ .svc-grid { grid-template-columns: 1fr 1fr; } }
+</style>
+
+<section class="services-sec">
+  <div class="services-inner">
+    <div class="sec-header">
+      <div class="sec-label">What We Do</div>
+      <h2 class="sec-title">Our <em>Services</em></h2>
+      <p class="sec-sub">Expert craftsmanship across every aspect of your home — done right the first time, every time. Licensed and insured on every project.</p>
+    </div>
+    <div class="svc-grid">
+      <a href="services.html#bathroom" class="svc-card">
+        <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=600&q=75" alt="Bathroom Remodeling" class="svc-card-img">
+        <div class="svc-card-body"><div class="svc-card-num">01</div><div class="svc-card-name">Bathroom Remodeling</div><div class="svc-card-desc">Complete bath transformations — custom tile, vanity, walk-in showers, fixtures and more.</div><div class="svc-card-link">View Service →</div></div>
+      </a>
+      <a href="services.html#flooring" class="svc-card">
+        <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=600&q=75" alt="Floor Tile and Flooring" class="svc-card-img">
+        <div class="svc-card-body"><div class="svc-card-num">02</div><div class="svc-card-name">Floor Tile &amp; Flooring</div><div class="svc-card-desc">Precision tile is our specialty. Porcelain, ceramic, natural stone, and other flooring options available.</div><div class="svc-card-tags"><span class="svc-tag">Tile</span><span class="svc-tag">Porcelain</span><span class="svc-tag">Ceramic</span><span class="svc-tag">Stone</span></div><div class="svc-card-link">View Service →</div></div>
+      </a>
+      <a href="services.html#kitchen" class="svc-card">
+        <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=75" alt="Kitchen Remodeling" class="svc-card-img">
+        <div class="svc-card-body"><div class="svc-card-num">03</div><div class="svc-card-name">Kitchen Remodeling</div><div class="svc-card-desc">Full kitchen renovations including tile, drywall, painting, backsplash and finish carpentry.</div><div class="svc-card-link">View Service →</div></div>
+      </a>
+      <a href="services.html#painting" class="svc-card">
+        <img src="https://images.unsplash.com/photo-1562259929-b4e1fd3aef09?w=600&q=75" alt="Interior Painting" class="svc-card-img">
+        <div class="svc-card-body"><div class="svc-card-num">04</div><div class="svc-card-name">Interior Painting</div><div class="svc-card-desc">Professional interior painting with meticulous prep, clean edges, and premium finishes.</div><div class="svc-card-link">View Service →</div></div>
+      </a>
+      <a href="services.html#exterior" class="svc-card">
+        <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=600&q=75" alt="Exterior Painting" class="svc-card-img">
+        <div class="svc-card-body"><div class="svc-card-num">05</div><div class="svc-card-name">Exterior Painting</div><div class="svc-card-desc">Durable coatings built for Florida's sun, humidity and storms. Protect and beautify your home.</div><div class="svc-card-link">View Service →</div></div>
+      </a>
+      <a href="services.html#backsplash" class="svc-card">
+        <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=600&q=75" alt="Backsplash" class="svc-card-img">
+        <div class="svc-card-body"><div class="svc-card-num">06</div><div class="svc-card-name">Backsplash</div><div class="svc-card-desc">Custom kitchen and bathroom backsplash. Tile, mosaic, stone — precision cuts and clean grout lines.</div><div class="svc-card-link">View Service →</div></div>
+      </a>
+      <a href="services.html#carpentry" class="svc-card">
+        <img src="https://images.unsplash.com/photo-1504148455328-c376907d081c?w=600&q=75" alt="Interior Carpentry" class="svc-card-img">
+        <div class="svc-card-body"><div class="svc-card-num">07</div><div class="svc-card-name">Interior Carpentry</div><div class="svc-card-desc">Crown molding, trim work, built-ins, shelving and fine finish carpentry done with precision.</div><div class="svc-card-link">View Service →</div></div>
+      </a>
+      <a href="services.html#doors" class="svc-card">
+        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=75" alt="Doors and Windows" class="svc-card-img">
+        <div class="svc-card-body"><div class="svc-card-num">08</div><div class="svc-card-name">Doors &amp; Windows</div><div class="svc-card-desc">Interior and exterior door and window installation. Improve curb appeal, energy efficiency and security.</div><div class="svc-card-link">View Service →</div></div>
+      </a>
+      <a href="services.html#drywall" class="svc-card">
+        <img src="https://images.unsplash.com/photo-1572120360610-d971b9d7767c?w=600&q=75" alt="Drywall and Texture" class="svc-card-img">
+        <div class="svc-card-body"><div class="svc-card-num">09</div><div class="svc-card-name">Drywall &amp; Texture</div><div class="svc-card-desc">Installation, repairs and custom texturing.</div><div class="svc-card-tags"><span class="svc-tag">Knockdown</span><span class="svc-tag">Orange Peel</span><span class="svc-tag">Level 5 Finish</span></div><div class="svc-card-link">View Service →</div></div>
+      </a>
+    </div>
+    <!-- Service 10 full width -->
+    <a href="services.html#fireplace" class="svc-card" style="display:block;margin-top:3px;overflow:hidden;">
+      <div style="display:grid;grid-template-columns:320px 1fr;">
+        <img src="https://images.unsplash.com/photo-1556020685-ae41abfc9365?w=700&q=75" alt="Fireplace and Accent Walls" style="width:100%;height:200px;object-fit:cover;display:block;">
+        <div class="svc-card-body" style="display:flex;flex-direction:column;justify-content:center;">
+          <div class="svc-card-num">10</div>
+          <div class="svc-card-name">Fireplace &amp; Accent Walls</div>
+          <div class="svc-card-desc">Stunning fireplace surrounds and custom accent walls that become the centerpiece of any room. Tile, stone, shiplap and more.</div>
+          <div class="svc-card-link">View Service →</div>
+        </div>
+      </div>
+    </a>
+    <div class="svc-cta">
+      <a href="quote.html" class="btn-navy" style="display:inline-flex;">📋 Request a Free Estimate</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== WHY US ===================== -->
+<style>
+.why-sec { padding: 88px 40px; background: var(--navy); }
+.why-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: center; }
+.why-title { font-family: 'Playfair Display', serif; font-size: clamp(28px, 3.5vw, 46px); font-weight: 600; color: #fff; line-height: 1.06; margin-bottom: 14px; }
+.why-title em { font-style: italic; color: #E8C96A; }
+.why-sub { font-size: 14px; color: rgba(255,255,255,0.62); line-height: 1.85; margin-bottom: 28px; }
+.why-features { display: flex; flex-direction: column; gap: 14px; }
+.why-feat { display: flex; align-items: flex-start; gap: 14px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.09); padding: 16px 18px; border-radius: 5px; transition: border-color .2s; }
+.why-feat:hover { border-color: rgba(224,184,74,0.35); }
+.wf-icon { background: rgba(197,155,47,0.15); border: 1px solid rgba(197,155,47,0.3); width: 40px; height: 40px; border-radius: 5px; display: flex; align-items: center; justify-content: center; font-size: 17px; flex-shrink: 0; }
+.wf-title { font-size: 13px; font-weight: 700; color: #fff; margin-bottom: 3px; }
+.wf-desc { font-size: 12px; color: rgba(255,255,255,0.52); line-height: 1.7; }
+.why-right { display: flex; flex-direction: column; gap: 12px; }
+.why-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.why-stat { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); padding: 26px 20px; border-radius: 5px; text-align: center; transition: border-color .2s; }
+.why-stat:hover { border-color: rgba(224,184,74,0.4); }
+.ws-num { font-family: 'Playfair Display', serif; font-size: 44px; font-weight: 600; color: #E8C96A; line-height: 1; }
+.ws-lbl { font-size: 10px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: rgba(255,255,255,0.45); margin-top: 5px; }
+.why-img { width: 100%; aspect-ratio: 16/9; object-fit: cover; border-radius: 5px; opacity: .82; display: block; }
+.why-btns { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 24px; }
+.btn-gold-outline { display: inline-flex; align-items: center; gap: 8px; border: 1.5px solid rgba(255,255,255,0.3); color: #fff; padding: 12px 22px; font-size: 12px; font-weight: 600; letter-spacing: .4px; text-transform: uppercase; border-radius: 5px; transition: all .2s; font-family: 'Inter', sans-serif; }
+.btn-gold-outline:hover { border-color: rgba(255,255,255,0.7); background: rgba(255,255,255,0.08); }
+@media(max-width:880px){ .why-inner { grid-template-columns: 1fr; gap: 36px; } .why-sec { padding: 60px 20px; } }
+</style>
+
+<section class="why-sec">
+  <div class="why-inner">
+    <div>
+      <div class="sec-label" style="color:#E8C96A">Why Choose Us</div>
+      <h2 class="why-title">Insurance &amp; Experience<br>You Can <em>Count On</em></h2>
+      <p class="why-sub">We're not just another contractor. All Remodeling and Painting RG LLC is the company your neighbors across the West Coast of Florida trust — because we back every job with real insurance, real experience, and real accountability.</p>
+      <div class="why-features">
+        <div class="why-feat"><div class="wf-icon">🛡️</div><div><div class="wf-title">Fully Licensed &amp; Insured</div><div class="wf-desc">Every project is fully covered. You're protected from start to finish — no exceptions.</div></div></div>
+        <div class="why-feat"><div class="wf-icon">⭐</div><div><div class="wf-title">10+ Years of Experience</div><div class="wf-desc">A decade of hands-on remodeling across Tampa Bay. We know how to handle every challenge.</div></div></div>
+        <div class="why-feat"><div class="wf-icon">🔨</div><div><div class="wf-title">Premium Quality Finishes</div><div class="wf-desc">We don't cut corners. Every detail is executed with precision — from tile to final coat of paint.</div></div></div>
+        <div class="why-feat"><div class="wf-icon">📞</div><div><div class="wf-title">Direct Access to Fernando</div><div class="wf-desc">You deal directly with the owner. Fast responses, honest answers, real communication.</div></div></div>
+      </div>
+      <div class="why-btns">
+        <a href="tel:8136937429" class="btn-gold">📞 Call Fernando Now</a>
+        <a href="quote.html" class="btn-gold-outline">Free Estimate →</a>
+      </div>
+    </div>
+    <div class="why-right">
+      <div class="why-stats">
+        <div class="why-stat"><div class="ws-num">10+</div><div class="ws-lbl">Years Experience</div></div>
+        <div class="why-stat"><div class="ws-num">500+</div><div class="ws-lbl">Projects Done</div></div>
+        <div class="why-stat"><div class="ws-num">5★</div><div class="ws-lbl">Average Rating</div></div>
+        <div class="why-stat"><div class="ws-num">100%</div><div class="ws-lbl">Fully Insured</div></div>
+      </div>
+      <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=900&q=80" alt="Professional remodeling team" class="why-img">
+    </div>
+  </div>
+</section>
+
+<!-- ===================== STATS BAR ===================== -->
+<style>
+.stats-bar { padding: 56px 40px; background: #fff; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+.stats-bar-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(4,1fr); gap: 3px; }
+.stat-card { background: var(--cream); border: 1px solid var(--border); padding: 36px 24px; text-align: center; position: relative; }
+.stat-card::after { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg,var(--gold),var(--gold2)); }
+.stat-card-num { font-family: 'Playfair Display', serif; font-size: 50px; font-weight: 600; color: var(--navy); line-height: 1; }
+.stat-card-lbl { font-size: 10px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--muted); margin-top: 7px; }
+@media(max-width:700px){ .stats-bar-inner { grid-template-columns: 1fr 1fr; } .stats-bar { padding: 44px 20px; } }
+</style>
+
+<div class="stats-bar">
+  <div class="stats-bar-inner">
+    <div class="stat-card"><div class="stat-card-num">10+</div><div class="stat-card-lbl">Years in Business</div></div>
+    <div class="stat-card"><div class="stat-card-num">500+</div><div class="stat-card-lbl">Projects Completed</div></div>
+    <div class="stat-card"><div class="stat-card-num">5★</div><div class="stat-card-lbl">Average Rating</div></div>
+    <div class="stat-card"><div class="stat-card-num">100%</div><div class="stat-card-lbl">Fully Insured</div></div>
+  </div>
+</div>
+
+<!-- ===================== REVIEWS ===================== -->
+<style>
+.reviews-sec { padding: 88px 40px; background: var(--off); }
+.reviews-inner { max-width: 1200px; margin: 0 auto; }
+.reviews-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 14px; margin-top: 48px; }
+.review-card { background: #fff; border: 1px solid var(--border); border-radius: 5px; padding: 28px 24px; transition: box-shadow .3s; }
+.review-card:hover { box-shadow: 0 8px 32px rgba(0,0,0,0.08); }
+.review-stars { color: var(--gold2); font-size: 14px; letter-spacing: 2px; margin-bottom: 12px; }
+.review-text { font-size: 13px; color: var(--mid); line-height: 1.85; margin-bottom: 18px; font-style: italic; }
+.review-author { font-weight: 700; font-size: 13px; color: var(--navy); }
+.review-loc { font-size: 11px; color: var(--muted); margin-top: 2px; }
+.review-svc { display: inline-block; margin-top: 9px; background: var(--cream); border: 1px solid var(--border); padding: 3px 9px; font-size: 10px; font-weight: 700; color: var(--gold); border-radius: 3px; letter-spacing: .3px; }
+@media(max-width:880px){ .reviews-grid { grid-template-columns: 1fr; } .reviews-sec { padding: 60px 20px; } }
+@media(min-width:881px) and (max-width:1100px){ .reviews-grid { grid-template-columns: 1fr 1fr; } }
+</style>
+
+<section class="reviews-sec">
+  <div class="reviews-inner">
+    <div class="sec-label">Client Reviews</div>
+    <h2 class="sec-title">What Florida Homeowners <em>Say</em></h2>
+    <div class="reviews-grid">
+      <div class="review-card"><div class="review-stars">★★★★★</div><div class="review-text">Fernando completely transformed our master bathroom. The tile work is absolutely perfect and he was professional from the first call to the final walkthrough. Fair pricing, clean workspace, done on time.</div><div class="review-author">Maria G.</div><div class="review-loc">Tampa, FL</div><span class="review-svc">Bathroom Remodeling</span></div>
+      <div class="review-card"><div class="review-stars">★★★★★</div><div class="review-text">We hired All Remodeling for a full bathroom renovation and tile flooring. The level 5 drywall finish is immaculate. True craftsmen — our home has never looked better. 10 out of 10.</div><div class="review-author">Michael S.</div><div class="review-loc">Riverview, FL</div><span class="review-svc">Tile Flooring + Drywall</span></div>
+      <div class="review-card"><div class="review-stars">★★★★★</div><div class="review-text">Fernando was transparent from day one — no hidden costs, no surprises. The tile work in our living room looks stunning. Efficient, clean, and trustworthy. Exactly what we needed.</div><div class="review-author">Robert W.</div><div class="review-loc">New Port Richey, FL</div><span class="review-svc">Floor Tile</span></div>
+      <div class="review-card"><div class="review-stars">★★★★★</div><div class="review-text">Our kitchen remodel turned out beyond our expectations. Fernando coordinated tile, backsplash, and painting — and the result is a kitchen we love to show off. Punctual, professional, outstanding quality.</div><div class="review-author">Sandra M.</div><div class="review-loc">Wesley Chapel, FL</div><span class="review-svc">Kitchen Remodeling</span></div>
+      <div class="review-card"><div class="review-stars">★★★★★</div><div class="review-text">The exterior paint job Fernando's team did on our house is incredible. They prepped everything properly and the finish is still perfect two years later. A company that takes real pride in their work.</div><div class="review-author">James R.</div><div class="review-loc">Clearwater, FL</div><span class="review-svc">Exterior Painting</span></div>
+      <div class="review-card"><div class="review-stars">★★★★★</div><div class="review-text">I called Fernando for a drywall repair that became a full room renovation. Honest, fast, and the knockdown texture matches perfectly. You can't even tell there was damage. Highly recommend.</div><div class="review-author">Lisa C.</div><div class="review-loc">Brandon, FL</div><span class="review-svc">Drywall &amp; Texture</span></div>
+      <div class="review-card"><div class="review-stars">★★★★★</div><div class="review-text">All Remodeling installed our bathroom tile and kitchen backsplash. Both came out perfect. Fernando communicated every step of the way and left the place spotless. A true professional.</div><div class="review-author">Carlos V.</div><div class="review-loc">Saint Petersburg, FL</div><span class="review-svc">Tile + Backsplash</span></div>
+      <div class="review-card"><div class="review-stars">★★★★★</div><div class="review-text">Fernando did a full interior paint job on our 2,400 sq ft home. Prep work was thorough, lines are crisp, finish is beautiful. Finished ahead of schedule and the price was very fair. Will hire again.</div><div class="review-author">Patricia H.</div><div class="review-loc">Odessa, FL</div><span class="review-svc">Interior Painting</span></div>
+      <div class="review-card"><div class="review-stars">★★★★★</div><div class="review-text">We had an accent wall and fireplace surround built. Fernando's attention to detail is unmatched — the result looks like something out of a magazine. The craftsmanship speaks for itself.</div><div class="review-author">Thomas B.</div><div class="review-loc">Zephyrhills, FL</div><span class="review-svc">Fireplace &amp; Accent Wall</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== AREAS ===================== -->
+<style>
+.areas-sec { padding: 72px 40px; background: #fff; }
+.areas-inner { max-width: 1200px; margin: 0 auto; }
+.areas-pills { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 28px; }
+.area-pill { background: var(--cream); border: 1px solid var(--border); padding: 10px 18px; font-size: 12.5px; font-weight: 600; color: var(--mid); border-radius: 5px; display: flex; align-items: center; gap: 7px; transition: all .2s; }
+.area-pill:hover { border-color: var(--gold); color: var(--gold); background: rgba(197,155,47,0.06); }
+.area-dot { width: 5px; height: 5px; background: var(--gold); border-radius: 50%; flex-shrink: 0; }
+@media(max-width:700px){ .areas-sec { padding: 56px 20px; } }
+</style>
+
+<section class="areas-sec">
+  <div class="areas-inner">
+    <div class="sec-label">Where We Work</div>
+    <h2 class="sec-title">Serving the <em>West Coast</em> of Florida</h2>
+    <p style="font-size:14px;color:var(--muted);max-width:540px;line-height:1.8;margin-top:8px;">We proudly serve homeowners across the greater Tampa Bay area. Not sure if we cover your area? Just call us.</p>
+    <div class="areas-pills">
+      <div class="area-pill"><span class="area-dot"></span>Tampa</div>
+      <div class="area-pill"><span class="area-dot"></span>Saint Petersburg</div>
+      <div class="area-pill"><span class="area-dot"></span>Clearwater</div>
+      <div class="area-pill"><span class="area-dot"></span>Largo</div>
+      <div class="area-pill"><span class="area-dot"></span>New Port Richey</div>
+      <div class="area-pill"><span class="area-dot"></span>Wesley Chapel</div>
+      <div class="area-pill"><span class="area-dot"></span>Odessa</div>
+      <div class="area-pill"><span class="area-dot"></span>Plant City</div>
+      <div class="area-pill"><span class="area-dot"></span>Riverview</div>
+      <div class="area-pill"><span class="area-dot"></span>Brandon Area</div>
+      <div class="area-pill"><span class="area-dot"></span>Zephyrhills</div>
+      <div class="area-pill"><span class="area-dot"></span>Dade City</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== LEAD FORM ===================== -->
+<style>
+.form-sec { padding: 80px 40px; background: var(--cream); border-top: 1px solid var(--border); }
+.form-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1.1fr; gap: 60px; align-items: start; }
+.form-left-title { font-family: 'Playfair Display', serif; font-size: clamp(26px, 3vw, 40px); font-weight: 600; color: var(--navy); line-height: 1.06; margin-bottom: 14px; }
+.form-left-title em { font-style: italic; color: var(--gold); }
+.form-left-sub { font-size: 14px; color: var(--mid); line-height: 1.85; margin-bottom: 24px; }
+.form-phone-label { font-size: 10px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: var(--muted); margin-bottom: 6px; }
+.form-phone-big { font-family: 'Playfair Display', serif; font-size: clamp(26px, 3.2vw, 38px); font-weight: 600; color: var(--navy); display: flex; align-items: center; gap: 10px; transition: color .2s; }
+.form-phone-big:hover { color: var(--gold); }
+.form-actions { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 20px; }
+.form-trust { margin-top: 28px; background: var(--gold-pale); border: 1px solid rgba(197,155,47,0.22); padding: 16px 18px; border-radius: 5px; }
+.form-trust-title { font-size: 11px; font-weight: 700; color: var(--navy); letter-spacing: .5px; margin-bottom: 7px; }
+.form-trust-list { font-size: 12.5px; color: var(--mid); line-height: 1.9; }
+.cf { background: #fff; border: 1px solid var(--border); border-radius: 7px; padding: 36px 30px; box-shadow: 0 6px 28px rgba(0,0,0,0.07); }
+.cf-title { font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 600; color: var(--navy); margin-bottom: 4px; }
+.cf-sub { font-size: 12px; color: var(--muted); margin-bottom: 22px; line-height: 1.6; }
+.cf-group { margin-bottom: 14px; }
+.cf-label { display: block; font-size: 11px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: var(--mid); margin-bottom: 5px; }
+.cf-input, .cf-select { width: 100%; padding: 12px 14px; border: 1.5px solid var(--border); border-radius: 5px; font-family: 'Inter', sans-serif; font-size: 13px; color: var(--text); background: #fff; transition: border-color .2s; outline: none; appearance: none; -webkit-appearance: none; }
+.cf-input:focus, .cf-select:focus { border-color: var(--gold); }
+.cf-select { cursor: pointer; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='7' fill='none'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%237A7060' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 13px center; padding-right: 36px; }
+.cf-btn { width: 100%; background: var(--navy); color: #fff; padding: 15px; font-size: 13.5px; font-weight: 700; letter-spacing: .4px; text-transform: uppercase; border: none; border-radius: 5px; cursor: pointer; font-family: 'Inter', sans-serif; transition: background .2s; display: flex; align-items: center; justify-content: center; gap: 8px; }
+.cf-btn:hover { background: var(--gold); color: var(--navy); }
+.cf-note { font-size: 11px; color: var(--muted); text-align: center; margin-top: 10px; line-height: 1.7; }
+@media(max-width:880px){ .form-inner { grid-template-columns: 1fr; gap: 36px; } .form-sec { padding: 56px 20px; } .cf { padding: 26px 18px; } }
+</style>
+
+<section class="form-sec" id="lead-form">
+  <div class="form-inner">
+    <div>
+      <div class="sec-label">Get a Free Estimate</div>
+      <h2 class="form-left-title">Ready to Start Your <em>Project?</em></h2>
+      <p class="form-left-sub">Call Fernando directly or fill out the form. We offer free, no-obligation estimates for all projects across the West Coast of Florida.</p>
+      <div class="form-phone-label">Call Us Directly</div>
+      <a href="tel:8136937429" class="form-phone-big">📞 813-693-7429</a>
+      <p style="font-size:12px;color:var(--muted);margin-top:7px;">Available Mon–Sat · Fast response guaranteed</p>
+      <div class="form-actions">
+        <a href="tel:8136937429" class="btn-navy">📞 Call Now</a>
+        <a href="mailto:allremodeling.business@gmail.com" class="btn-outline">✉ Email Us</a>
+      </div>
+      <div class="form-trust">
+        <div class="form-trust-title">WHY CHOOSE ALL REMODELING?</div>
+        <div class="form-trust-list">✅ Licensed &amp; Fully Insured &nbsp; ✅ 10+ Years Experience<br>✅ 5-Star Rated &nbsp; ✅ Quality Finishes &nbsp; ✅ Free Estimates</div>
+      </div>
+    </div>
+    <div>
+      <div class="cf">
+        <div class="cf-title">Request a Free Estimate</div>
+        <div class="cf-sub">We'll respond within a few hours — usually faster.</div>
+        <div class="cf-group"><label class="cf-label">Full Name *</label><input type="text" class="cf-input" id="cf-name" placeholder="Your full name"></div>
+        <div class="cf-group"><label class="cf-label">Phone Number *</label><input type="tel" class="cf-input" id="cf-phone" placeholder="(813) 000-0000"></div>
+        <div class="cf-group"><label class="cf-label">Address</label><input type="text" class="cf-input" id="cf-address" placeholder="Your property address"></div>
+        <div class="cf-group">
+          <label class="cf-label">Type of Project *</label>
+          <select class="cf-select" id="cf-service">
+            <option value="" disabled selected>Select a service...</option>
+            <option>Bathroom Remodeling</option>
+            <option>Kitchen Remodeling</option>
+            <option>Tile Flooring</option>
+            <option>Interior Painting</option>
+            <option>Exterior Painting</option>
+            <option>Backsplash</option>
+            <option>Drywall</option>
+            <option>Texture</option>
+            <option>Doors &amp; Windows</option>
+            <option>Carpentry</option>
+            <option>Fireplace / Accent Wall</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <button class="cf-btn" onclick="submitForm()">📋 Send My Request</button>
+        <div class="cf-note">🔒 Your information is private. No spam, ever.<br>Licensed &amp; Insured · West Coast Florida</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PHONE BANNER ===================== -->
+<style>
+.phone-banner { background: var(--navy); padding: 64px 40px; }
+.phone-banner-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 28px; }
+.phone-banner-left { border-left: 3px solid var(--gold2); padding-left: 22px; }
+.ph-tag { font-size: 10px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: rgba(255,255,255,0.45); margin-bottom: 8px; }
+.ph-num { font-family: 'Playfair Display', serif; font-size: clamp(34px, 4.5vw, 54px); font-weight: 600; color: #fff; line-height: 1; display: block; transition: color .2s; }
+.ph-num:hover { color: #E8C96A; }
+.ph-sub { font-size: 12px; color: rgba(255,255,255,0.45); margin-top: 7px; }
+.phone-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+@media(max-width:700px){ .phone-banner { padding: 48px 20px; } .phone-banner-inner { flex-direction: column; } }
+</style>
+
+<div class="phone-banner">
+  <div class="phone-banner-inner">
+    <div class="phone-banner-left">
+      <div class="ph-tag">Talk to Fernando directly — Free Estimates Available</div>
+      <a href="tel:8136937429" class="ph-num">813-693-7429</a>
+      <div class="ph-sub">Mon–Sat · Fast response · West Coast Florida · allremodeling.business@gmail.com</div>
+    </div>
+    <div class="phone-actions">
+      <a href="tel:8136937429" class="btn-gold">📞 Call Now</a>
+      <a href="mailto:allremodeling.business@gmail.com" class="btn-gold-outline">✉ Email Us</a>
+      <a href="quote.html" class="btn-gold-outline">Free Quote →</a>
+    </div>
+  </div>
+</div>
+
+<!-- ===================== SOCIAL MEDIA ===================== -->
+<style>
+.socials-sec { padding: 56px 40px; background: var(--cream); border-top: 1px solid var(--border); }
+.socials-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 24px; }
+.socials-text strong { color: var(--navy); }
+.socials-text { font-size: 14px; color: var(--mid); line-height: 1.7; }
+.social-links { display: flex; gap: 12px; }
+.social-btn { display: flex; align-items: center; gap: 9px; padding: 12px 20px; border-radius: 5px; font-size: 13px; font-weight: 700; transition: all .2s; }
+.social-fb { background: #1877F2; color: #fff; }
+.social-fb:hover { background: #1260cc; transform: translateY(-2px); }
+.social-ig { background: linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888); color: #fff; }
+.social-ig:hover { opacity: .88; transform: translateY(-2px); }
+@media(max-width:700px){ .socials-sec { padding: 44px 20px; } }
+</style>
+
+<div class="socials-sec">
+  <div class="socials-inner">
+    <div><div class="sec-label" style="margin-bottom:8px">Follow Us</div><div class="socials-text"><strong>See our work in progress</strong> — real projects, real results from real homes across Tampa Bay.</div></div>
+    <div class="social-links">
+      <a href="https://www.facebook.com/" target="_blank" rel="noopener" class="social-btn social-fb">
+        <svg width="17" height="17" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        Facebook
+      </a>
+      <a href="https://www.instagram.com/" target="_blank" rel="noopener" class="social-btn social-ig">
+        <svg width="17" height="17" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        Instagram
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- ===================== FOOTER ===================== -->
+<style>
+footer { background: var(--navy); padding: 60px 40px 28px; }
+.footer-grid { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px; padding-bottom: 40px; border-bottom: 1px solid rgba(255,255,255,0.1); margin-bottom: 24px; }
+.footer-brand { font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 600; color: #fff; margin-bottom: 12px; }
+.footer-brand-sub { font-size: 12.5px; color: rgba(255,255,255,0.52); line-height: 1.85; margin-bottom: 16px; }
+.footer-badge { display: inline-flex; align-items: center; gap: 7px; background: rgba(197,155,47,0.12); border: 1px solid rgba(224,184,74,0.3); padding: 7px 13px; font-size: 10px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: #E8C96A; border-radius: 4px; }
+.footer-col-title { font-size: 10px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: #E8C96A; margin-bottom: 16px; }
+.footer-col a { display: block; color: rgba(255,255,255,0.52); font-size: 12.5px; margin-bottom: 9px; transition: color .2s; }
+.footer-col a:hover { color: #E8C96A; }
+.footer-bottom { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; font-size: 11px; color: rgba(255,255,255,0.38); }
+.footer-bottom a { color: #E8C96A; }
+@media(max-width:880px){ footer { padding: 48px 20px 24px; } .footer-grid { grid-template-columns: 1fr; gap: 28px; } }
+</style>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand">All Remodeling &amp; Painting RG LLC</div>
+      <p class="footer-brand-sub">West Coast Florida's trusted remodeling company. Licensed, insured, and committed to quality finishes on every project.<br><strong style="color:rgba(255,255,255,0.75)">Fernando Torres — Owner</strong></p>
+      <div class="footer-badge">🛡️ Licensed &amp; Insured</div>
+      <div style="margin-top:14px;display:flex;gap:12px;flex-wrap:wrap;">
+        <a href="https://www.facebook.com/" target="_blank" style="color:rgba(255,255,255,0.45);font-size:12px;transition:color .2s" onmouseover="this.style.color='#E8C96A'" onmouseout="this.style.color='rgba(255,255,255,0.45)'">Facebook</a>
+        <span style="color:rgba(255,255,255,0.2)">|</span>
+        <a href="https://www.instagram.com/" target="_blank" style="color:rgba(255,255,255,0.45);font-size:12px;transition:color .2s" onmouseover="this.style.color='#E8C96A'" onmouseout="this.style.color='rgba(255,255,255,0.45)'">Instagram</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Services</div>
+      <a href="services.html#bathroom">Bathroom Remodeling</a>
+      <a href="services.html#flooring">Floor Tile &amp; Flooring</a>
+      <a href="services.html#kitchen">Kitchen Remodeling</a>
+      <a href="services.html#painting">Interior Painting</a>
+      <a href="services.html#exterior">Exterior Painting</a>
+      <a href="services.html#backsplash">Backsplash</a>
+      <a href="services.html#carpentry">Interior Carpentry</a>
+      <a href="services.html#doors">Doors &amp; Windows</a>
+      <a href="services.html#drywall">Drywall &amp; Texture</a>
+      <a href="services.html#fireplace">Fireplace &amp; Accent Walls</a>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Company</div>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+      <a href="quote.html">Free Quote</a>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Service Areas</div>
+      <a href="#">Tampa</a>
+      <a href="#">Saint Petersburg</a>
+      <a href="#">Clearwater</a>
+      <a href="#">Largo</a>
+      <a href="#">New Port Richey</a>
+      <a href="#">Wesley Chapel</a>
+      <a href="#">Odessa</a>
+      <a href="#">Plant City</a>
+      <a href="#">Riverview</a>
+      <a href="#">Brandon Area</a>
+      <a href="#">Zephyrhills</a>
+      <a href="#">Dade City</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 All Remodeling and Painting RG LLC. All rights reserved.</span>
+    <span>📞 <a href="tel:8136937429">813-693-7429</a> · ✉ <a href="mailto:allremodeling.business@gmail.com">allremodeling.business@gmail.com</a></span>
+  </div>
+</footer>
+
+<!-- ===================== STICKY BUTTONS ===================== -->
+<style>
+.sticky { position: fixed; bottom: 22px; right: 22px; z-index: 9999; display: flex; flex-direction: column; gap: 8px; align-items: flex-end; }
+.sticky-btn { display: flex; align-items: center; gap: 8px; padding: 12px 18px; border-radius: 30px; font-size: 12.5px; font-weight: 700; box-shadow: 0 6px 24px rgba(0,0,0,0.2); transition: transform .2s, box-shadow .2s; }
+.sticky-btn:hover { transform: translateY(-2px); box-shadow: 0 10px 32px rgba(0,0,0,0.25); }
+.sticky-call { background: #1A7F4B; color: #fff; }
+.sticky-email { background: var(--navy); color: #fff; }
+@media(max-width:500px){ .sticky { bottom: 14px; right: 12px; } }
+</style>
+
+<div class="sticky">
+  <a href="tel:8136937429" class="sticky-btn sticky-call">📞 Call Now</a>
+  <a href="mailto:allremodeling.business@gmail.com" class="sticky-btn sticky-email">✉ Email Us</a>
+</div>
+
+<!-- ===================== JAVASCRIPT ===================== -->
+<script>
+// Mobile menu
+function toggleMenu() {
+  document.getElementById('mobileMenu').classList.toggle('open');
+}
+
+// Close menu on outside click
+document.addEventListener('click', function(e) {
+  const menu = document.getElementById('mobileMenu');
+  const burger = document.querySelector('.hamburger');
+  if (menu.classList.contains('open') && !menu.contains(e.target) && !burger.contains(e.target)) {
+    menu.classList.remove('open');
+  }
+});
+
+// Hero slider
+var currentSlide = 0;
+var slides = document.querySelectorAll('.hero-slide');
+var dots = document.querySelectorAll('.hero-dot');
+
+function goSlide(n) {
+  slides[currentSlide].classList.remove('active');
+  dots[currentSlide].classList.remove('active');
+  currentSlide = n;
+  slides[currentSlide].classList.add('active');
+  dots[currentSlide].classList.add('active');
+}
+
+setInterval(function() {
+  goSlide((currentSlide + 1) % slides.length);
+}, 5000);
+
+// Form submit
+function submitForm() {
+  var name = document.getElementById('cf-name').value.trim();
+  var phone = document.getElementById('cf-phone').value.trim();
+  var service = document.getElementById('cf-service').value;
+  if (!name || !phone || !service) {
+    alert('Please fill in your name, phone number, and type of project.');
+    return;
+  }
+  var btn = document.querySelector('.cf-btn');
+  btn.textContent = '✅ Request Sent! We\'ll contact you soon.';
+  btn.style.background = '#1A7F4B';
+  btn.disabled = true;
+}
+
+// Scroll fade-in (safe for all browsers including Safari)
+if ('IntersectionObserver' in window) {
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(e) {
+      if (e.isIntersecting) {
+        e.target.style.opacity = '1';
+        e.target.style.transform = 'translateY(0)';
+        observer.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.07, rootMargin: '0px 0px -40px 0px' });
+
+  document.querySelectorAll('.svc-card, .review-card, .why-feat, .stat-card, .area-pill, .badge').forEach(function(el) {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(18px)';
+    el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+    observer.observe(el);
+  });
+} // if no IntersectionObserver support, elements stay visible (no animation)
+</script>
+</body>
+</html>
