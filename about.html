@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us | All Remodeling and Painting RG LLC</title>
+<meta name="description" content="Meet Fernando Torres, founder of All Remodeling and Painting RG LLC. 5+ years experience, insured &amp; experienced, West Coast Florida remodeling.">
+<link rel="icon" href="assets/images/favicon.png" type="image/png">
+<link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+<link rel="shortcut icon" href="assets/images/favicon.png">
+<link rel="apple-touch-icon" href="assets/images/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#1B2A3B;--navy2:#243550;--gold:#C59B2F;--gold2:#E0B84A;--gold-pale:#FDF6E3;--white:#FFFFFF;--off:#F8F7F4;--cream:#F3F0E8;--border:#E2DDD4;--text:#1A1A1A;--mid:#4A4540;--muted:#7A7060;}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}html{scroll-behavior:smooth;}
+body{background:var(--off);color:var(--text);font-family:'Inter',sans-serif;overflow-x:hidden;}
+img{display:block;max-width:100%;}a{text-decoration:none;}
+</style>
+</head>
+<body>
+
+<!-- TOPBAR -->
+<style>
+.topbar{background:var(--navy);padding:8px 20px;text-align:center;font-size:12px;color:rgba(255,255,255,0.65);}
+.topbar a{color:#E8C96A;font-weight:600;transition:color .2s;}.topbar a:hover{color:#fff;}
+.topbar .sep{margin:0 14px;opacity:.35;}
+</style>
+<div class="topbar">
+  <span>📞 <a href="tel:8134446109">813-444-6109</a></span>
+  <span class="sep">|</span>
+  <span>✉ <a href="mailto:allremodeling.business@gmail.com">allremodeling.business@gmail.com</a></span>
+  <span class="sep">|</span>
+  <span>🛡️ Insured &amp; Experienced — West Coast Florida</span>
+</div>
+
+<!-- NAVBAR -->
+<style>
+.navbar{position:sticky;top:0;z-index:9999;background:#fff;border-bottom:1px solid var(--border);box-shadow:0 2px 16px rgba(0,0,0,0.07);}
+.navbar-inner{max-width:1200px;margin:0 auto;padding:0 32px;display:flex;align-items:center;justify-content:space-between;height:70px;}
+.nav-logo{font-family:'Playfair Display',serif;font-size:18px;font-weight:600;color:var(--navy);line-height:1.15;}
+.nav-logo small{display:block;font-family:'Inter',sans-serif;font-size:9px;font-weight:500;letter-spacing:3px;color:var(--muted);text-transform:uppercase;margin-top:2px;}
+.nav-links{display:flex;align-items:center;gap:28px;}
+.nav-links a{font-size:12.5px;font-weight:500;color:var(--mid);letter-spacing:.3px;padding-bottom:2px;border-bottom:1.5px solid transparent;transition:color .2s,border-color .2s;}
+.nav-links a:hover,.nav-links a.active{color:var(--navy);border-color:var(--gold);}
+.nav-cta{background:var(--navy)!important;color:#fff!important;padding:10px 20px!important;border-radius:5px;border-bottom:none!important;font-weight:600!important;font-size:12px!important;transition:background .2s!important;}
+.nav-cta:hover{background:var(--gold)!important;color:var(--navy)!important;}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:6px;background:none;border:none;}
+.hamburger span{display:block;width:22px;height:2px;background:var(--navy);border-radius:2px;transition:.3s;}
+.mobile-menu{display:none;position:fixed;top:70px;left:0;right:0;background:#fff;border-bottom:2px solid var(--border);z-index:9998;padding:20px 24px;flex-direction:column;gap:16px;box-shadow:0 8px 32px rgba(0,0,0,0.1);}
+.mobile-menu.open{display:flex;}
+.mobile-menu a{font-size:14px;font-weight:500;color:var(--mid);padding:8px 0;border-bottom:1px solid var(--border);}
+.mobile-menu a:last-child{border-bottom:none;color:var(--navy);font-weight:700;}
+@media(max-width:880px){.nav-links{display:none;}.hamburger{display:flex;}}
+</style>
+<nav class="navbar">
+  <div class="navbar-inner">
+    <a href="index.html" class="nav-logo">All Remodeling<small>&amp; Painting RG LLC</small></a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="about.html" class="active">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="quote.html" class="nav-cta">Free Quote</a>
+    </div>
+    <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="services.html">Services</a>
+  <a href="about.html">About Us</a>
+  <a href="contact.html">Contact</a>
+  <a href="quote.html">Free Quote — Call 813-444-6109</a>
+</div>
+
+<!-- PAGE HERO -->
+<style>
+.page-hero{background:var(--navy);padding:80px 40px 70px;position:relative;overflow:hidden;}
+.page-hero::after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 80% at 70% 50%,rgba(197,155,47,0.08) 0%,transparent 65%);pointer-events:none;}
+.page-hero-inner{max-width:1200px;margin:0 auto;position:relative;z-index:2;}
+.breadcrumb{font-size:10px;letter-spacing:2px;color:rgba(255,255,255,0.45);margin-bottom:18px;text-transform:uppercase;}
+.breadcrumb a{color:var(--gold2);text-decoration:none;transition:color .2s;}.breadcrumb a:hover{color:#fff;}
+.page-title{font-family:'Playfair Display',serif;font-size:clamp(40px,5.5vw,72px);font-weight:600;color:#fff;line-height:1.04;}
+.page-title em{font-style:italic;color:#E8C96A;}
+.page-sub{font-size:14px;color:rgba(255,255,255,0.62);margin-top:16px;max-width:560px;line-height:1.85;}
+</style>
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="breadcrumb"><a href="index.html">Home</a> &nbsp;/&nbsp; About Us</div>
+    <h1 class="page-title">About <em>Us</em></h1>
+    <p class="page-sub">A family-built company powered by experience, backed by insurance, and driven by the belief that every home deserves exceptional craftsmanship.</p>
+  </div>
+</div>
+
+<!-- ABOUT SECTION -->
+<style>
+.sec{padding:88px 40px;background:var(--white);}
+.sec-alt{background:var(--off);}
+.sec-inner{max-width:1200px;margin:0 auto;}
+.sec-label{font-size:10px;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:var(--gold);display:flex;align-items:center;gap:10px;margin-bottom:12px;}
+.sec-label::before{content:'';display:block;width:24px;height:2px;background:var(--gold);border-radius:2px;}
+.sec-title{font-family:'Playfair Display',serif;font-size:clamp(28px,3.5vw,46px);font-weight:600;color:var(--navy);line-height:1.06;margin-bottom:10px;}
+.sec-title em{font-style:italic;color:var(--gold);}
+.gold-bar{width:40px;height:3px;background:var(--gold);border-radius:2px;margin:16px 0 22px;}
+.about-grid{display:grid;grid-template-columns:1fr 420px;gap:72px;align-items:start;}
+.about-body p{font-size:14px;color:var(--mid);line-height:1.9;margin-bottom:14px;}
+.about-quote{background:var(--cream);border-left:3px solid var(--gold);padding:16px 20px;border-radius:0 4px 4px 0;margin:20px 0;font-size:13.5px;color:var(--mid);font-style:italic;line-height:1.8;}
+.about-quote strong{font-style:normal;color:var(--navy);}
+.about-badges{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 24px;}
+.badge{display:flex;align-items:center;gap:6px;background:var(--cream);border:1px solid var(--border);padding:7px 13px;border-radius:4px;font-size:11px;font-weight:600;color:var(--mid);}
+.about-card{background:var(--cream);border:1px solid var(--border);border-radius:8px;padding:40px 32px;text-align:center;position:relative;overflow:hidden;}
+.about-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--gold),var(--gold2));}
+.ac-emoji{font-size:70px;margin-bottom:18px;display:block;}
+.ac-name{font-family:'Playfair Display',serif;font-size:26px;font-weight:600;color:var(--navy);margin-bottom:4px;}
+.ac-role{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--muted);margin-bottom:28px;}
+.stat-grid{display:grid;grid-template-columns:1fr 1fr;gap:3px;}
+.stat-item{background:var(--white);border:1px solid var(--border);padding:20px 12px;text-align:center;}
+.stat-num{font-family:'Playfair Display',serif;font-size:34px;font-weight:600;color:var(--navy);line-height:1;}
+.stat-lbl{font-size:9.5px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);margin-top:4px;}
+.btn-navy{display:inline-flex;align-items:center;gap:8px;background:var(--navy);color:#fff;padding:13px 22px;font-size:12px;font-weight:700;letter-spacing:.4px;text-transform:uppercase;border-radius:5px;transition:all .2s;border:none;cursor:pointer;font-family:'Inter',sans-serif;}
+.btn-navy:hover{background:var(--navy2);transform:translateY(-1px);}
+@media(max-width:960px){.about-grid{grid-template-columns:1fr;gap:36px;}.sec{padding:60px 20px;}}
+</style>
+<section class="sec">
+  <div class="sec-inner">
+    <div class="about-grid">
+      <div class="about-body">
+        <div class="sec-label">Our Story</div>
+        <h2 class="sec-title">Meet <em>Fernando Torres</em></h2>
+        <div class="gold-bar"></div>
+        <p>All Remodeling and Painting RG LLC was built on a simple but powerful commitment: deliver the quality of work you'd want in your own home. Founded by Fernando Torres, the company has grown into one of Tampa Bay's most trusted names in residential remodeling and painting.</p>
+        <p>Fernando brings hands-on expertise to every project — personally overseeing quality control and maintaining direct communication with every client. His philosophy is straightforward: do the job right, be honest about timelines and pricing, and never cut corners.</p>
+        <p>Every project we take on carries our name and our reputation. That means we don't leave until the work is done to a standard we're proud to stand behind.</p>
+        <div class="about-quote">"We built this company on one promise: every home we touch will be treated like our own. Insurance, experience, and quality finishes — every single time."<br><strong>— Fernando Torres, Owner</strong></div>
+        <div class="about-badges">
+          <div class="badge"><span>🛡️</span> Insured &amp; Experienced</div>
+          <div class="badge"><span>⭐</span> 5+ Years Experience</div>
+          <div class="badge"><span>🏆</span> Quality Finishes</div>
+          <div class="badge"><span>📞</span> Owner Always Available</div>
+        </div>
+        <a href="quote.html" class="btn-navy">Get Your Free Estimate →</a>
+      </div>
+      <div class="about-card">
+        <span class="ac-emoji">👷</span>
+        <div class="ac-name">Fernando Torres</div>
+        <div class="ac-role">Owner &amp; Lead Contractor</div>
+        <div class="stat-grid">
+          <div class="stat-item"><div class="stat-num">5+</div><div class="stat-lbl">Years Exp.</div></div>
+          <div class="stat-item"><div class="stat-num">500+</div><div class="stat-lbl">Projects</div></div>
+          <div class="stat-item"><div class="stat-num">5★</div><div class="stat-lbl">Rating</div></div>
+          <div class="stat-item"><div class="stat-num">100%</div><div class="stat-lbl">Insured</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VALUES SECTION -->
+<style>
+.values-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:48px;}
+.val-card{background:var(--white);border:1px solid var(--border);border-radius:8px;padding:32px 24px;transition:transform .25s,box-shadow .25s,border-color .25s;}
+.val-card:hover{transform:translateY(-4px);box-shadow:0 14px 40px rgba(0,0,0,0.08);border-color:rgba(197,155,47,0.45);}
+.val-icon{font-size:32px;margin-bottom:14px;display:block;}
+.val-title{font-family:'Playfair Display',serif;font-size:18px;font-weight:600;color:var(--navy);margin-bottom:8px;}
+.val-desc{font-size:13px;color:var(--muted);line-height:1.8;}
+@media(max-width:960px){.values-grid{grid-template-columns:1fr 1fr;}}
+@media(max-width:600px){.values-grid{grid-template-columns:1fr;}}
+</style>
+<section class="sec sec-alt">
+  <div class="sec-inner">
+    <div class="sec-label">What We Stand For</div>
+    <h2 class="sec-title">Our <em>Core Values</em></h2>
+    <div class="gold-bar"></div>
+    <div class="values-grid">
+      <div class="val-card"><span class="val-icon">🛡️</span><div class="val-title">Fully Insured</div><div class="val-desc">Every project is protected. We carry full insurance so you can have complete peace of mind on every job.</div></div>
+      <div class="val-card"><span class="val-icon">🏆</span><div class="val-title">Proven Experience</div><div class="val-desc">Years of hands-on work across hundreds of Tampa Bay projects mean nothing surprises us.</div></div>
+      <div class="val-card"><span class="val-icon">✅</span><div class="val-title">Quality Finishes</div><div class="val-desc">We don't rush. We take the time to do the job right the first time, every time.</div></div>
+      <div class="val-card"><span class="val-icon">💬</span><div class="val-title">Clear Communication</div><div class="val-desc">You'll always know where your project stands. No surprises, no hidden costs.</div></div>
+      <div class="val-card"><span class="val-icon">🧹</span><div class="val-title">Clean &amp; Respectful</div><div class="val-desc">We treat your home like our own — organized, clean, and protected during every phase of work.</div></div>
+      <div class="val-card"><span class="val-icon">📞</span><div class="val-title">Fast Response</div><div class="val-desc">We respond quickly, estimate accurately, and start on time. Your project matters to us.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PHONE BANNER -->
+<style>
+.phone-banner{background:var(--navy);padding:64px 40px;}
+.phone-banner-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:28px;}
+.ph-tag{font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,0.45);margin-bottom:8px;}
+.ph-num{font-family:'Playfair Display',serif;font-size:clamp(34px,4.5vw,54px);font-weight:600;color:#fff;line-height:1;display:block;transition:color .2s;}
+.ph-num:hover{color:#E8C96A;}
+.ph-sub{font-size:12px;color:rgba(255,255,255,0.45);margin-top:7px;}
+.btn-gold{display:inline-flex;align-items:center;gap:8px;background:var(--gold2);color:var(--navy);padding:14px 28px;font-size:12px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;border-radius:5px;transition:all .2s;border:none;cursor:pointer;font-family:'Inter',sans-serif;}
+.btn-gold:hover{background:#f0cc60;transform:translateY(-2px);}
+.btn-gold-outline{display:inline-flex;align-items:center;gap:8px;border:1.5px solid rgba(255,255,255,0.35);color:#fff;padding:13px 22px;font-size:12px;font-weight:600;letter-spacing:.4px;text-transform:uppercase;border-radius:5px;transition:all .2s;font-family:'Inter',sans-serif;}
+.btn-gold-outline:hover{border-color:rgba(255,255,255,0.7);background:rgba(255,255,255,0.08);}
+.phone-actions{display:flex;gap:12px;flex-wrap:wrap;}
+@media(max-width:700px){.phone-banner{padding:48px 20px;}.phone-banner-inner{flex-direction:column;}}
+</style>
+<div class="phone-banner">
+  <div class="phone-banner-inner">
+    <div style="border-left:3px solid var(--gold2);padding-left:22px;">
+      <div class="ph-tag">Talk to Fernando directly — Free Estimates</div>
+      <a href="tel:8134446109" class="ph-num">813-444-6109</a>
+      <div class="ph-sub">Mon–Sat · West Coast Florida · allremodeling.business@gmail.com</div>
+    </div>
+    <div class="phone-actions">
+      <a href="tel:8134446109" class="btn-gold">📞 Call Now</a>
+      <a href="quote.html" class="btn-gold-outline">Free Estimate →</a>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<style>
+footer{background:var(--navy);padding:60px 40px 28px;}
+.footer-grid{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr;gap:48px;padding-bottom:40px;border-bottom:1px solid rgba(255,255,255,0.1);margin-bottom:24px;}
+.footer-brand{font-family:'Playfair Display',serif;font-size:18px;font-weight:600;color:#fff;margin-bottom:12px;}
+.footer-brand-sub{font-size:12.5px;color:rgba(255,255,255,0.52);line-height:1.85;margin-bottom:16px;}
+.footer-col-title{font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#E8C96A;margin-bottom:16px;}
+.footer-col a{display:block;color:rgba(255,255,255,0.52);font-size:12.5px;margin-bottom:9px;transition:color .2s;}
+.footer-col a:hover{color:#E8C96A;}
+.footer-bottom{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:11px;color:rgba(255,255,255,0.38);}
+.footer-bottom a{color:#E8C96A;}
+@media(max-width:880px){footer{padding:48px 20px 24px;}.footer-grid{grid-template-columns:1fr;gap:28px;}}
+</style>
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand">All Remodeling &amp; Painting RG LLC</div>
+      <p class="footer-brand-sub">West Coast Florida's trusted remodeling company. Licensed, insured, and committed to quality on every project.<br><strong style="color:rgba(255,255,255,0.75)">Fernando Torres — Owner</strong></p>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Services</div>
+      <a href="services.html#bathroom">Bathroom Remodeling</a>
+      <a href="services.html#flooring">Floor Tile &amp; Flooring</a>
+      <a href="services.html#kitchen">Kitchen Remodeling</a>
+      <a href="services.html#painting">Interior Painting</a>
+      <a href="services.html#exterior">Exterior Painting</a>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Company</div>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+      <a href="quote.html">Free Quote</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 All Remodeling and Painting RG LLC. All rights reserved.</span>
+    <span>📞 <a href="tel:8134446109">813-444-6109</a></span>
+  </div>
+</footer>
+
+<!-- STICKY + JS -->
+<style>
+.sticky{position:fixed;bottom:22px;right:22px;z-index:9999;display:flex;flex-direction:column;gap:8px;align-items:flex-end;}
+.sticky-btn{display:flex;align-items:center;gap:8px;padding:12px 18px;border-radius:30px;font-size:12.5px;font-weight:700;box-shadow:0 6px 24px rgba(0,0,0,0.2);transition:transform .2s,box-shadow .2s;}
+.sticky-btn:hover{transform:translateY(-2px);box-shadow:0 10px 32px rgba(0,0,0,0.25);}
+.sticky-call{background:#1A7F4B;color:#fff;}
+.sticky-email{background:var(--navy);color:#fff;}
+</style>
+<div class="sticky">
+  <a href="tel:8134446109" class="sticky-btn sticky-call">📞 Call Now</a>
+  <a href="quote.html" class="sticky-btn" style="background:var(--gold2);color:var(--navy);">📋 Quote</a>
+  <a href="mailto:allremodeling.business@gmail.com" class="sticky-btn sticky-email">✉ Email Us</a>
+</div>
+<script>
+function toggleMenu(){document.getElementById('mobileMenu').classList.toggle('open');}
+document.addEventListener('click',function(e){
+  var menu=document.getElementById('mobileMenu');
+  var burger=document.querySelector('.hamburger');
+  if(menu.classList.contains('open')&&!menu.contains(e.target)&&!burger.contains(e.target)){menu.classList.remove('open');}
+});
+</script>
+</body></html>
