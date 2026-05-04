@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Doors and Windows Gallery | All Remodeling and Painting RG LLC</title>
+<title>Drywall and Texture Gallery | All Remodeling and Painting RG LLC</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
@@ -48,10 +48,10 @@ footer{background:var(--navy);padding:40px;border-top:1px solid rgba(255,255,255
 <nav class="navbar"><div class="navbar-inner"><a href="../index.html" class="nav-logo"><img src="../assets/logoprincipal.png" alt="All Remodeling and Painting RG LLC" style="height:50px;width:auto;"></a><div class="nav-links"><a href="../index.html">Home</a><a href="../services.html" class="active">Services</a><a href="../about.html">About</a><a href="../contact.html">Contact</a><a href="../quote.html" class="nav-cta">Free Quote</a></div><button class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></button></div></nav>
 <div class="mobile-menu" id="mobileMenu"><a href="../index.html">Home</a><a href="../services.html">Services</a><a href="../about.html">About</a><a href="../contact.html">Contact</a><a href="../quote.html">Free Quote &mdash; 813-444-6109</a></div>
 <div class="page-hero"><div class="page-hero-inner">
-  <div class="breadcrumb"><a href="../index.html">Home</a> &rsaquo; <a href="../services.html">Services</a> &rsaquo; Doors and Windows Gallery</div>
-  <h1 class="page-title">Doors &amp; <em>Windows Gallery</em></h1>
-  <p class="page-sub">Interior and exterior door and window installations.</p>
-  <a href="../services.html#doors" class="back-link">&larr; Back to Services</a>
+  <div class="breadcrumb"><a href="../index.html">Home</a> &rsaquo; <a href="../services.html">Services</a> &rsaquo; Drywall and Texture Gallery</div>
+  <h1 class="page-title">Drywall &amp; <em>Texture Gallery</em></h1>
+  <p class="page-sub">Level 5 finishes, knockdown, orange peel, and custom texture work.</p>
+  <a href="../services.html#drywall" class="back-link">&larr; Back to Services</a>
 </div></div>
 <div class="gallery-section"><div class="gallery-inner">
   <div class="gallery-count" id="galleryCount">Loading photos...</div>
@@ -66,10 +66,10 @@ footer{background:var(--navy);padding:40px;border-top:1px solid rgba(255,255,255
 <div class="lightbox" id="lightbox" onclick="closeLB(event)"><button class="lb-close" onclick="closeLightbox()">&#10005;</button><button class="lb-nav lb-prev" onclick="lbNav(-1);event.stopPropagation()">&#8249;</button><img class="lb-img" id="lbImg" src="" alt=""><button class="lb-nav lb-next" onclick="lbNav(1);event.stopPropagation()">&#8250;</button><div class="lb-counter" id="lbCounter"></div></div>
 <script>
 function toggleMenu(){document.getElementById('mobileMenu').classList.toggle('open');}
-var FOLDER='../assets/images/';var PREFIX='puerta';var MAX_PHOTOS=24;var photos=[];var cur=0;
+var FOLDER='../assets/images/';var PREFIX='drywall';var MAX_PHOTOS=19;var photos=[];var cur=0;
 function buildGallery(){var grid=document.getElementById('photoGrid');var ct=document.getElementById('galleryCount');var found=0;var checks=0;for(var i=1;i<=MAX_PHOTOS;i++){(function(n){var img=new Image();var src=FOLDER+PREFIX+n+'.jpg';img.onload=function(){found++;photos.push(src);addPhoto(src,found-1);ct.textContent=found+' photo'+(found!==1?'s':'');if(++checks===MAX_PHOTOS)done(found);};img.onerror=function(){if(++checks===MAX_PHOTOS)done(found);};img.src=src;})(i);}}
-function addPhoto(src,idx){var d=document.createElement('div');d.className='photo-item';d.innerHTML='<img src="'+src+'" alt="Doors windows project '+(idx+1)+'" loading="lazy"><div class="photo-overlay"><span class="photo-overlay-icon">&#128269;</span></div>';d.onclick=function(){openLB(idx);};document.getElementById('photoGrid').appendChild(d);}
-function done(n){if(n===0){document.getElementById('galleryCount').style.display='none';document.getElementById('photoGrid').innerHTML='<div style="grid-column:1/-1"><div class="no-photos"><div class="no-photos-icon">&#128247;</div><div class="no-photos-title">Photos Coming Soon</div><div class="no-photos-sub">Add photos named puerta1.jpg, puerta2.jpg to assets/images/</div></div></div>';}else{document.getElementById('galleryCount').textContent=n+' project photo'+(n!==1?'s':'');}}
+function addPhoto(src,idx){var d=document.createElement('div');d.className='photo-item';d.innerHTML='<img src="'+src+'" alt="Drywall texture project '+(idx+1)+'" loading="lazy"><div class="photo-overlay"><span class="photo-overlay-icon">&#128269;</span></div>';d.onclick=function(){openLB(idx);};document.getElementById('photoGrid').appendChild(d);}
+function done(n){if(n===0){document.getElementById('galleryCount').style.display='none';document.getElementById('photoGrid').innerHTML='<div style="grid-column:1/-1"><div class="no-photos"><div class="no-photos-icon">&#128247;</div><div class="no-photos-title">Photos Coming Soon</div><div class="no-photos-sub">Add photos named drywall1.jpg, drywall2.jpg to assets/images/</div></div></div>';}else{document.getElementById('galleryCount').textContent=n+' project photo'+(n!==1?'s':'');}}
 function openLB(i){cur=i;document.getElementById('lbImg').src=photos[i];document.getElementById('lbCounter').textContent=(i+1)+' / '+photos.length;document.getElementById('lightbox').classList.add('open');document.body.style.overflow='hidden';}
 function closeLightbox(){document.getElementById('lightbox').classList.remove('open');document.body.style.overflow='';}
 function closeLB(e){if(e.target===document.getElementById('lightbox'))closeLightbox();}
