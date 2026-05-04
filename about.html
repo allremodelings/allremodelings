@@ -39,8 +39,8 @@ img{display:block;max-width:100%;}a{text-decoration:none;}
 <style>
 .navbar{position:sticky;top:0;z-index:9999;background:#fff;border-bottom:1px solid var(--border);box-shadow:0 2px 16px rgba(0,0,0,0.07);}
 .navbar-inner{max-width:1200px;margin:0 auto;padding:0 32px;display:flex;align-items:center;justify-content:space-between;height:70px;}
-.nav-logo{font-family:'Playfair Display',serif;font-size:18px;font-weight:600;color:var(--navy);line-height:1.15;}
-.nav-logo small{display:block;font-family:'Inter',sans-serif;font-size:9px;font-weight:500;letter-spacing:3px;color:var(--muted);text-transform:uppercase;margin-top:2px;}
+.nav-logo{display:flex;align-items:center;line-height:1;}
+.nav-logo img{height:50px;width:auto;display:block;}
 .nav-links{display:flex;align-items:center;gap:28px;}
 .nav-links a{font-size:12.5px;font-weight:500;color:var(--mid);letter-spacing:.3px;padding-bottom:2px;border-bottom:1.5px solid transparent;transition:color .2s,border-color .2s;}
 .nav-links a:hover,.nav-links a.active{color:var(--navy);border-color:var(--gold);}
@@ -56,7 +56,7 @@ img{display:block;max-width:100%;}a{text-decoration:none;}
 </style>
 <nav class="navbar">
   <div class="navbar-inner">
-    <a href="index.html" class="nav-logo">All Remodeling<small>&amp; Painting RG LLC</small></a>
+    <a href="index.html" class="nav-logo"><img src="assets/logoprincipal.png" alt="All Remodeling and Painting RG LLC"></a>
     <div class="nav-links">
       <a href="index.html">Home</a>
       <a href="services.html">Services</a>
